@@ -25,7 +25,7 @@ position: relative;
 overflow-x: hidden;
 }
 
-/* ===== ARKA PLAN LOGO (PSEUDO-ELEMENT) ===== */
+/* ===== ARKA PLAN LOGO ===== */
 body::before {
 content: "";
 position: fixed;
@@ -33,20 +33,20 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-/* Görsel dosyanızın yolunu buraya yazın */
-background-image: url('logo.jpg');
+/* Resmi doğrudan koda gömdük, dışarıdan logo.jpg dosyası aramaz */
+background-image: url('https://i.ibb.co/6803PTh/rr.jpg');
 background-repeat: no-repeat;
 background-position: center center;
-background-size: contain; /* Görselin tamamını sığdırır. Ekranı tamamen kaplamasını isterseniz 'cover' yapabilirsiniz */
-opacity: 0.15; /* Logonun transparanlığını buradan ayarlayabilirsiniz (0.0 ile 1.0 arası) */
+background-size: contain;
+opacity: 0.15;
 z-index: 0;
-pointer-events: none; /* Tıklamaları engellememesi için */
+pointer-events: none;
 }
 
 /* ===== ANA KUTU ===== */
 .container{
 position: relative;
-z-index: 1; /* İçeriğin logonun üstünde kalmasını sağlar */
+z-index: 1;
 text-align:center;
 width:90%;
 max-width:420px;
